@@ -1,0 +1,463 @@
+From 032a6581e4c73d7d26fcc3f10f59a697f14e1500 Mon Sep 17 00:00:00 2001
+From: Jurg Verhoeven <jurgmill@gmail.com>
+Date: Tue, 27 Nov 2018 09:36:38 +0100
+Subject: [PATCH] Navigatie Test
+
+---
+ NavTest/.idea/NavTest.iml                     |   8 +
+ NavTest/.idea/encodings.xml                   |   4 +
+ NavTest/.idea/misc.xml                        |   6 +
+ NavTest/.idea/modules.xml                     |   8 +
+ NavTest/.idea/workspace.xml                   | 161 ++++++++++++++++++
+ NavTest/CSS/Style.css                         | 106 ++++++++++++
+ .../iconfinder_tempaltaaaeaqas_3305212.svg    |   1 +
+ NavTest/index.html                            |  86 ++++++++++
+ 8 files changed, 380 insertions(+)
+ create mode 100644 NavTest/.idea/NavTest.iml
+ create mode 100644 NavTest/.idea/encodings.xml
+ create mode 100644 NavTest/.idea/misc.xml
+ create mode 100644 NavTest/.idea/modules.xml
+ create mode 100644 NavTest/.idea/workspace.xml
+ create mode 100644 NavTest/CSS/Style.css
+ create mode 100644 NavTest/Images/iconfinder_tempaltaaaeaqas_3305212.svg
+ create mode 100644 NavTest/index.html
+
+diff --git a/NavTest/.idea/NavTest.iml b/NavTest/.idea/NavTest.iml
+new file mode 100644
+index 0000000..c956989
+--- /dev/null
++++ b/NavTest/.idea/NavTest.iml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="WEB_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+diff --git a/NavTest/.idea/encodings.xml b/NavTest/.idea/encodings.xml
+new file mode 100644
+index 0000000..15a15b2
+--- /dev/null
++++ b/NavTest/.idea/encodings.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with NO BOM" />
++</project>
+\ No newline at end of file
+diff --git a/NavTest/.idea/misc.xml b/NavTest/.idea/misc.xml
+new file mode 100644
+index 0000000..28a804d
+--- /dev/null
++++ b/NavTest/.idea/misc.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptSettings">
++    <option name="languageLevel" value="ES6" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/NavTest/.idea/modules.xml b/NavTest/.idea/modules.xml
+new file mode 100644
+index 0000000..78f0060
+--- /dev/null
++++ b/NavTest/.idea/modules.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/NavTest.iml" filepath="$PROJECT_DIR$/.idea/NavTest.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/NavTest/.idea/workspace.xml b/NavTest/.idea/workspace.xml
+new file mode 100644
+index 0000000..56293d5
+--- /dev/null
++++ b/NavTest/.idea/workspace.xml
+@@ -0,0 +1,161 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="1a782441-6632-4f11-8829-b01ad31b074d" name="Default Changelist" comment="" />
++    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileEditorManager">
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/index.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="513">
++              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/CSS/Style.css">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="256">
++              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++    </leaf>
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="CSS File" />
++        <option value="HTML File" />
++      </list>
++    </option>
++  </component>
++  <component name="IdeDocumentHistory">
++    <option name="CHANGED_PATHS">
++      <list>
++        <option value="$PROJECT_DIR$/index.html" />
++        <option value="$PROJECT_DIR$/CSS/Style.css" />
++      </list>
++    </option>
++  </component>
++  <component name="PhpServers">
++    <servers />
++  </component>
++  <component name="ProjectFrameBounds" extendedState="6">
++    <option name="y" value="23" />
++    <option name="width" value="960" />
++    <option name="height" value="1177" />
++  </component>
++  <component name="ProjectView">
++    <navigator proportions="" version="1">
++      <foldersAlwaysOnTop value="true" />
++    </navigator>
++    <panes>
++      <pane id="ProjectPane">
++        <subPane>
++          <expand>
++            <path>
++              <item name="NavTest" type="b2602c69:ProjectViewProjectNode" />
++              <item name="NavTest" type="462c0819:PsiDirectoryNode" />
++            </path>
++            <path>
++              <item name="NavTest" type="b2602c69:ProjectViewProjectNode" />
++              <item name="NavTest" type="462c0819:PsiDirectoryNode" />
++              <item name="CSS" type="462c0819:PsiDirectoryNode" />
++            </path>
++          </expand>
++          <select />
++        </subPane>
++      </pane>
++      <pane id="Scope" />
++    </panes>
++  </component>
++  <component name="PropertiesComponent">
++    <property name="DefaultHtmlFileTemplate" value="HTML File" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="list.type.of.created.stylesheet" value="CSS" />
++    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
++    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
++  </component>
++  <component name="RunDashboard">
++    <option name="ruleStates">
++      <list>
++        <RuleState>
++          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
++        </RuleState>
++        <RuleState>
++          <option name="name" value="StatusDashboardGroupingRule" />
++        </RuleState>
++      </list>
++    </option>
++  </component>
++  <component name="SvnConfiguration">
++    <configuration />
++  </component>
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="1a782441-6632-4f11-8829-b01ad31b074d" name="Default Changelist" comment="" />
++      <created>1543242695920</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1543242695920</updated>
++      <workItem from="1543242697179" duration="3512000" />
++      <workItem from="1543305209310" duration="2037000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TimeTrackingManager">
++    <option name="totallyTimeSpent" value="5549000" />
++  </component>
++  <component name="ToolWindowManager">
++    <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
++    <layout>
++      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.092651755" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="Favorites" order="2" side_tool="true" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" />
++      <window_info anchor="bottom" id="Run" order="2" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
++      <window_info anchor="bottom" id="Database Changes" order="8" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Terminal" order="10" />
++      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
++      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Database" order="3" />
++    </layout>
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="1" />
++  </component>
++  <component name="editorHistoryManager">
++    <entry file="file://$PROJECT_DIR$/index.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="513">
++          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/CSS/Style.css">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="256">
++          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
++        </state>
++      </provider>
++    </entry>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/NavTest/CSS/Style.css b/NavTest/CSS/Style.css
+new file mode 100644
+index 0000000..90488a9
+--- /dev/null
++++ b/NavTest/CSS/Style.css
+@@ -0,0 +1,106 @@
++* {
++    margin: 0px;
++    padding: 0px;
++    box-sizing: border-box;
++    font-family: Arial;
++}
++
++header{
++    background-color: #333;
++    color: white;
++    padding: 10px;
++    width: 100%;
++}
++
++
++header nav ul{
++    list-style-type: none;
++    margin: 0;
++    padding: 0;
++    overflow: hidden;
++    font-weight: bold;
++}
++
++header nav ul li{
++    float: left;
++}
++
++nav ul li a{
++    display: block;
++    color: white;
++    text-align: center;
++    padding: 14px 16px;
++    text-decoration: none;
++}
++
++header nav ul li:hover{
++    background-color: #111;
++    text-decoration: underline;
++}
++
++aside nav ul{
++    list-style-type: none;
++    margin: 0;
++    padding: 0;
++    width: 25%;
++    background-color: #333;
++    position: fixed;
++    height: 100%;
++    overflow: auto;
++    font-weight: bold;
++}
++
++aside nav ul li a{
++    display: block;
++    color: white;
++    padding: 14px 16px;
++    text-decoration: none;
++    background-image: linear-gradient(#333333, #3c3c3c);
++}
++
++aside nav ul li a:hover{
++    background-image: none;
++    background-color: #111;
++    color: white;
++    text-decoration: underline;
++}
++
++@media only screen and (max-width: 960px) {
++    header nav{
++        display: none;
++    }
++}
++
++@media only screen and (min-width: 961px){
++    aside{
++        display: none;
++    }
++}
++
++.dropdown-menu{
++    display: none;
++    position: absolute;
++    background-color: #f9f9f9;
++    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
++    z-index: 1;
++}
++
++.dropdown:hover .dropdown-menu{
++    display: block;
++}
++
++li.dropdown {
++    display: block;
++}
++
++.dropdown-menu a {
++    color: black;
++    padding: 14px 16px;
++    text-decoration: none;
++    display: block;
++    text-align: left;
++}
++
++.dropdown-menu a:hover{
++    text-decoration: underline;
++}
+\ No newline at end of file
+diff --git a/NavTest/Images/iconfinder_tempaltaaaeaqas_3305212.svg b/NavTest/Images/iconfinder_tempaltaaaeaqas_3305212.svg
+new file mode 100644
+index 0000000..f9fa41a
+--- /dev/null
++++ b/NavTest/Images/iconfinder_tempaltaaaeaqas_3305212.svg
+@@ -0,0 +1 @@
++<?xml version="1.0" ?><svg height="120" id="svg4254" version="1.1" viewBox="0 0 120 120" width="120" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"><defs id="defs4256"/><path d="M 112.61327,59.999937 A 52.613299,52.613221 0 0 1 59.999973,112.61316 52.613299,52.613221 0 0 1 7.3866746,59.999937 52.613299,52.613221 0 0 1 59.999973,7.3867164 52.613299,52.613221 0 0 1 112.61327,59.999937 Z" id="circle15471" style="opacity:1;fill:#80deea;fill-opacity:1;stroke:none;stroke-width:6.9000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><path d="M 18.505101,47.206682 7.4749544,58.236832 c -0.039264,0.587218 -0.068705,1.175053 -0.088248,1.763259 2.53e-5,29.057461 23.55577,52.613179 52.613276,52.613189 C 80.020154,112.58603 98.29,101.19897 107.13211,83.237218 L 78.030972,50.754025 59.147827,70.671839 Z" id="path15473" style="fill:#009688;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/><path d="m 72.542025,49.751574 a 6.7921839,6.7921736 0 0 1 -6.792183,6.792173 6.7921839,6.7921736 0 0 1 -6.792186,-6.792173 6.7921839,6.7921736 0 0 1 6.792186,-6.792173 6.7921839,6.7921736 0 0 1 6.792183,6.792173 z" id="circle15475" style="opacity:1;fill:#fff59d;fill-opacity:1;stroke:none;stroke-width:6.9000001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"/><path d="M 50.121355,34.123279 9.5202532,74.724309 A 52.613297,52.613218 0 0 0 59.999982,112.61328 52.613297,52.613218 0 0 0 110.85989,73.212379 L 84.151234,46.503758 76.22722,60.228615 50.121355,34.123279 Z" id="path15477" style="fill:#00897b;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"/></svg>
+\ No newline at end of file
+diff --git a/NavTest/index.html b/NavTest/index.html
+new file mode 100644
+index 0000000..998122f
+--- /dev/null
++++ b/NavTest/index.html
+@@ -0,0 +1,86 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>NavTest</title>
++    <link rel="stylesheet" href="CSS/Style.css">
++</head>
++<body>
++    <header>
++        <div>
++            <a href="#"><img src="Images/iconfinder_tempaltaaaeaqas_3305212.svg" alt="Berg Logo"></a>
++        </div>
++            <h1>
++                Header
++            </h1>
++        <nav>
++            <ul>
++                <li>
++                    <a href="#">Home</a>
++                </li>
++                <li class="dropdown">
++                    <a href="#">Video's</a>
++                    <div class="dropdown-menu">
++                        <a href="#">Video1</a>
++                        <a href="#">Video2</a>
++                        <a href="#">Video3</a>
++                        <a href="#">Video4</a>
++                    </div>
++                </li>
++                <li class="dropdown">
++                    <a href="#">Forum</a>
++                    <div class="dropdown-menu">
++                        <a href="#">Forum1</a>
++                        <a href="#">Forum2</a>
++                        <a href="#">Forum3</a>
++                        <a href="#">Forum4</a>
++                    </div>
++                </li>
++                <li>
++                    <a href="#">Over ons</a>
++                </li>
++                <li>
++                    <a href="#">Bezoeker</a>
++                </li>
++            </ul>
++        </nav>
++    </header>
++    <aside>
++        <nav>
++            <ul>
++                <li>
++                    <a href="#">Home</a>
++                </li>
++                <li class="dropdown">
++                    <a href="#">Video's</a>
++                    <div class="dropdown-menu">
++                        <a href="#">Video1</a>
++                        <a href="#">Video2</a>
++                        <a href="#">Video3</a>
++                        <a href="#">Video4</a>
++                    </div>
++                </li>
++                <li class="dropdown">
++                    <a href="#">Forum</a>
++                    <div class="dropdown-menu">
++                        <a href="#">Forum1</a>
++                        <a href="#">Forum2</a>
++                        <a href="#">Forum3</a>
++                        <a href="#">Forum4</a>
++                    </div>
++                </li>
++                <li>
++                    <a href="#">Over ons</a>
++                </li>
++                <li>
++                    <a href="#">Bezoeker</a>
++                </li>
++            </ul>
++        </nav>
++    </aside>
++    <main>
++
++    </main>
++</body>
++</html>
+\ No newline at end of file
+-- 
+2.18.0
+
